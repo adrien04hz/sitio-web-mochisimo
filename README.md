@@ -1,6 +1,6 @@
 # SITIO WEB MOCHISIMO
 
-Proyecto realizado el `17 de Febrero de 2025` para Ingeniería de Software en colaboración con https://github.com/Valm04, posteriormente a los pasos se encuentra la demostración.
+Proyecto realizado el `11 de Febrero de 2025` para Ingeniería de Software en colaboración con https://github.com/Valm04, posteriormente a los pasos se encuentra la demostración.
 
 Por otro lado, la página se encuentra en desarrollo.
 
