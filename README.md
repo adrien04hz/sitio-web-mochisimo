@@ -59,7 +59,7 @@ La página estará corriendo en `localhost:8089`y el PhpMyAdmin en `localhost:80
 
 # DEMOSTRACIÓN
 
-Dentro de la página se pueden encontrar los siguientes apartados de manera general (Clic en la imagen para ver video de demostración).
+Dentro de la página se pueden encontrar los siguientes apartados de manera general (Clic en la imagen para descargar el video de demostración, los videos se encuentran en la carpeta `/public/Video`).
 
 ### Cátalogo de productos
 [![Ver demo](./public/Images/Catalogo1.png)](./public/Video/Catalogo_mochisimo.mp4)
