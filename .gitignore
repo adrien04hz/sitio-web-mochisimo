@@ -1,0 +1,4 @@
+data/
+log/
+mysql_data/
+.env

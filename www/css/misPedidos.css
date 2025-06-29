@@ -1,0 +1,211 @@
+.pedidos-contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 90px;
+    /* border: solid; */
+    margin-top: 160px;
+}
+
+.saludo-cliente{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.saludo-cliente h1{
+    text-transform: uppercase;
+}
+
+.saludo-cliente p{
+    font-size: 18px;
+}
+
+
+.titulo-pendientes{
+    font-size: 20px;
+    margin-bottom: 70px;
+    text-align: center;
+    background-color: #E0FBE2;
+    height: 50px;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.titulo-pendientes2{
+    font-size: 20px;
+    margin-bottom: 70px;
+    text-align: center;
+    background-color: #FFAAA6;
+    height: 50px;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pendientes-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding: 0px 90px 0px 90px;
+}
+
+.pedido-card{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.089);
+    padding: 15px;
+}
+
+.pedido-card2{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.089);
+    padding: 15px;
+}
+
+.pedido-card:hover{
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.466);
+    transform: translate(-5px,-5px);
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: #FFAAA6;
+}
+
+.pedido-card:hover .items-pedido-detalles{
+    background-color: white;
+    border-color: #0000;
+
+}
+
+
+.pedido-card2:hover{
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.466);
+    transform: translate(-5px,-5px);
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: #E0FBE2;
+}
+
+.pedido-card2:hover .items-pedido-detalles{
+    background-color: white;
+    border-color: #0000;
+}
+.datos-miPedido{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    font-size: 18px;
+}
+
+.detalles-pedido-contenedor{
+    height: 350px;
+    width: 100%;
+}
+
+.titulo-detalles-pedido{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.estado-pedido{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 17px;
+    font-size: 18px;
+}
+
+.items-pedido-detalles{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.items-pedido-detalles::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+}
+
+.items-pedido-detalles::-webkit-scrollbar-track {
+    background: #0000;
+  }
+
+.items-pedido-detalles::-webkit-scrollbar-thumb {
+    background: #0000;
+    border-radius: 9999px;
+    transition: 0.4s;
+}
+
+.items-pedido-detalles:hover::-webkit-scrollbar-thumb {
+    background: #c1c2c5;
+    transition: 0.4s;
+}
+
+.item-detalle-pedido{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    gap: 10px;
+    /* border: violet solid  !important; */
+}
+
+
+.img-item-pedido{
+    height: 100%;
+    width: 110px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos-item-pedido-detalle{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.img-item-pedido2{
+    width: 90%;
+    height: 90%;
+}
+
+.img-item-pedido2 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+

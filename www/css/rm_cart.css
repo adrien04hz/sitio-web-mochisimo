@@ -1,0 +1,60 @@
+.botoncito-rm {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #d8e2dc;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    /* background: #e62222; */
+}
+   
+.botoncito-rm, .botoncito-rm span {
+    transition: 200ms;
+}
+   
+.botoncito-rm .text2 {
+    transform: translateX(15px);
+    color: rgba(0, 0, 0, 0.322);
+    font-weight: bold;
+}
+   
+.botoncito-rm .icon2 {
+    /* position: absolute; */
+    border-left: 1px solid #b6beb9;
+    transform: translateX(30px);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+.botoncito-rm svg {
+    width: 15px;
+    fill: rgba(0, 0, 0, 0.322);
+}
+   
+.botoncito-rm:hover {
+    background: #b6beb9;
+}
+   
+.botoncito-rm:hover .text2 {
+    color: transparent;
+}
+   
+.botoncito-rm:hover .icon2 {
+    width: 100px;
+    border-left: none;
+    transform: translateX(-16px);
+}
+   
+.botoncito-rm:focus {
+    outline: none;
+}
+   
+.botoncito-rm:active .icon2 svg {
+    transform: scale(0.8);
+}

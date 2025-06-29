@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.figura svg {
+    transform: scaleX(3.4);
+    transform: scaleY(1.2); 
+    transform-origin: end; 
+  }
+
+.carrousel{
+    width: 100%;
+ 
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 10em;
+    bottom: 0;
+    left: 25em;
+    right: 0;
+    height: 50%;
+    width: 18%; 
+    display: flex;
+    align-items: end;
+    transform: translateY(180px); 
+    justify-content: space-between;
+    padding: 20px; 
+    
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-color: rgb(255, 188, 188);
+}
+
+#itemCarrousel-2{
+    background-color: rgb(50, 200, 226);
+}
+
+#itemCarrousel-3{
+    background-color: rgb(200, 226, 50);
+}
+
+.conteCarrouselController{
+    position: absolute;
+    top: 10em;
+    bottom: 0;
+    left: 30em;
+    right: 0;
+    height: 50%;
+    width: 10%; 
+    display: flex;
+    align-items: end;
+    transform: translateY(90px); 
+    justify-content: space-between;
+    padding: 20px; 
+   
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(110, 50, 50);
+    
+}
+
+.itemCarrouselArrows > a > i{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    width: 40px;
+    
+
+}
+.figura {
+    position: relative;
+    width: 100%; 
+    height: 100%; }
+
+.contenido {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: absolute;
+    width: 25%;
+    height: 49%;
+    top: 30%;
+    left: 18%;
+    font-size: 24px;
+    color: white;
+    font-family: "Patua One", serif;
+    z-index: 1;
+    background-color: aquamarine;
+    padding: 50px; 
+    box-sizing: border-box; 
+}
+
+.btn-pagina {
+    margin-top: 300px; 
+    
+}
+
+.custom-button {
+    background-color: #061d18; 
+    color: #fff; 
+    font-size: 16px; 
+    padding: 14px 20px; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    font-family: "Patua One", serif;
+    transition: transform 0.2s ease, box-shadow 0.1s ease; 
+}
+
+.custom-button:hover {
+    transform: scale(1.07); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); 
+    background-color: white; 
+    color: black;
+}
+
+.custom-button:active {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(44, 40, 40, 0.2); 
+}

@@ -1,0 +1,318 @@
+.container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+    max-width: 100%;
+    max-height: 80%;
+    gap: 20px;
+
+    
+}   
+
+
+.encabezado{
+    width: 100%;
+    background-color: none;
+    font-size: 15px;
+    padding:50px 50px 30px 80px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.envolver {
+   
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: flex-start;
+    gap: 20px;  
+    padding-bottom: 120px;  
+    padding-left: 100px;
+    box-sizing: border-box; }
+
+.resenias {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    max-width: 400px;  
+    box-sizing: border-box;  
+    margin: 0;
+}
+.contenido{
+    width: 400px;
+    min-height: 200px; 
+   
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px #b8bedd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    gap: 20px;
+    
+   
+}
+
+.datos{
+  
+   padding: 10px 10px 5px 5px;
+   text-align: center;
+}
+.datos .estilizando{
+    font-size: 18px;
+    text-align: left;
+    padding: 0 10px 12px;
+}
+.datos .email{
+    text-align: left;
+    font-size: 15px;
+    padding: 0 10px 15px;
+}
+/*aqui empezaremos con modificaciones*/
+
+.ajustar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu-container{
+    position: relative;
+    display: inline-block;
+
+       
+}
+
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu-container:hover .menu {
+    display: flex;
+}
+.menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    background-color: white;
+    z-index: 1000;
+    height: 60px;
+}
+
+
+
+.menu>div{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    height: 50%;
+}
+.modificar{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu button:hover {
+    background: #f0f0f0;
+}
+
+
+.delete {
+    color: red;
+}
+
+.modify{
+    transition: 0.2s;
+}
+
+.del{
+    transition: 0.2s;
+}
+
+.del:hover{
+    background-color: #ff0000;
+}
+
+.del:hover a{
+    color: white;
+}
+
+.modify:hover{
+    background-color: #e5ebe7;
+}
+
+.fa-star{
+    font-size: 20px;
+    color: #fd4;
+    padding: 10px;
+    text-shadow: 0 0 20px rgb(231, 174, 18);
+  
+    
+}
+.comentario {
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center; 
+
+}
+.cont {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding-right: 10px; 
+}
+.img {   
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    overflow: hidden; 
+}
+.img img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+/*Boton para poder insertar una nueva resenia*/
+
+.btn-pagina {
+    background:#fff;
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    padding:0 40px ;
+    
+    
+}
+
+.custom-button {
+    background-color: #26415E; 
+    color: #fff; 
+    font-size: 16px;    
+    padding: 14px 20px; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    font-family: "Patua One", serif;
+    transition: transform 0.2s ease, box-shadow 0.1s ease; 
+}
+
+.custom-button:hover {
+    transform: scale(1.07); 
+    box-shadow: 0 6px 10px  rgba(0, 0, 0, 0.1); 
+    background-color: whitesmoke; 
+    color: black;
+}
+
+.custom-button:active {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(44, 40, 40, 0.2); 
+}
+
+@media (max-width: 1024px) {
+    .resenias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido {
+        max-width: 90%;
+    }
+}
+
+/* Para pantallas de celulares */
+@media (max-width: 600px) {
+    .container {
+        padding: 40px 10px;
+    }
+
+    .resenias {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contenido {
+        max-width: 95%;
+    }
+
+    .comentario {
+        font-size: 14px;
+    }
+
+    .custom-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* El modal es invisible por defecto */
+.modal {
+    display: none; /* Se oculta por defecto */
+    position: fixed;
+    z-index: 1; /* Se asegura de que el modal esté encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0); /* Color de fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semi-transparente */
+}
+
+/* El contenido del modal */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Puede cambiar dependiendo del tamaño que quieras */
+    max-width: 400px;
+}
+
+/* El botón de cerrar */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

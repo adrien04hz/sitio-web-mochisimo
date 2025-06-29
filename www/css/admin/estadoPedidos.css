@@ -1,0 +1,167 @@
+
+.estadoPedidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+    width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+  
+}
+.pedidos-contenedor-principal-usuario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    gap:20px;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: #26415e; */
+}
+/*boton de seleccion de usuario*/
+
+.seleccion-usuario label {
+    margin: 0; 
+}
+
+.seleccion-usuario select {
+    width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    top: 0;
+    color: #444;
+    border: 2px solid #fdfdfd;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cambia el color cuando pasas el mouse */
+.seleccion-usuario select:hover {
+    border-color: #ffffff;
+
+}
+
+.seleccion-usuario select:focus {
+    border-color: #26415e;
+}
+
+/* Personalizar las opciones del .seleccion-usuario select */
+.seleccion-usuario select option {
+    background: #fff;
+    color: #333;
+    padding: 5px;
+}
+
+.pedido-card-usuario {
+    width: 250px;  /* Tamaño pequeño para las tarjetas */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.pedido-card-usuario:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(-5px, -5px);
+}
+
+.datos-pedidos-usuario {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.detalles-pedido-contenedor-usuario {
+    margin-top: 10px;
+    font-size: 14px;
+    overflow: hidden;  /* Evitar que los elementos sobresalgan */
+}
+
+.titulo-detalles-pedido-usuario {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.items-pedido-detalles-usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.item-detalle-pedido-usuario {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 80px;  /* Ajustado para que no ocupe mucho espacio */
+}
+
+.img-item-pedido-usuario{
+    width: 50px;  /* Hacemos la imagen más pequeña */
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-item-pedido-usuario img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+
+.items-pedido-detalles-usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;  /* Permitir el desplazamiento vertical */
+    max-height: 150px;  /* Ajusta la altura máxima según necesites */
+    padding-right: 5px;  /* Espacio para evitar que el scroll tape contenido */
+}
+.estado-pedido-usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 10px;
+    padding: 8px;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.total-pago {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.boton-estado {
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff7b7b;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton-estado:hover {
+    background-color: #ff5252;
+    transform: scale(1.05);
+}

@@ -1,0 +1,230 @@
+.detalle-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: violet solid; */
+    height: 900px;
+    margin-top: 150px;
+    gap: 40px;
+
+}
+
+.dtl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tt{
+    margin-top: -80px;
+    margin-bottom: 40px;
+    /* border: solid; */
+}
+.detalle-principal > div{
+    /* border: violet solid; */
+    width: 850px;
+    height: 800px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    /* border: solid; */
+
+}
+
+.datos > div{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    /* border: violet solid; */
+    height: 100px;
+}
+
+.datos h2{
+    font-size: 60px;
+}
+.datos div{
+    font-size: 20px;
+}
+
+.q-stock{
+    display: flex;
+    flex-direction: row;
+}
+
+.q-stock > div{
+    display: flex;
+    justify-content: left;
+    /* border: violet solid; */
+    flex: 1;
+}
+
+.cantidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cantidad > button{
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.cantidad-add{
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    /* border: violet solid; */
+    border-radius: 20px;
+
+
+}
+
+.cantidad-add input{
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.stock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.stockk:disabled{
+    color: black;
+    background-color: white;
+    opacity: 1;
+    border: 2px solid black;
+}
+
+.st{
+    background-color: rgba(128, 128, 128, 0.759);
+    height: 50px;
+    width: 140px;
+    padding: 10px;
+    padding-top: 14px;
+    border-radius: 20px;
+}
+
+.add{
+    margin-top: 60px;
+}
+
+.btn:hover{
+    box-shadow: 3px 3px;
+    background-color: #9d8189;
+    transition: 0.3s;
+    transform: scale(1.1)
+}
+
+.img-detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-contenedor{
+    height: 700px;
+    width: 700px;
+}
+
+.img-contenedor img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.stock-cantidad{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+
+.button {
+    position: relative;
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.button:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+  
+.button, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+  
+.button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+}
+  
+.button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+  
+.button .svg {
+    width: 30px;
+    stroke: #fff;
+}
+  
+.button:hover {
+    background: #34974d;
+}
+  
+.button:hover .button__text {
+    color: transparent;
+}
+  
+.button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+  
+.button:active .button__icon {
+    background-color: #2e8644;
+}
+  
+.button:active {
+    border: 1px solid #2e8644;
+}
+
+.stockk{
+    text-align: center;
+    font-size: 20px;
+}
